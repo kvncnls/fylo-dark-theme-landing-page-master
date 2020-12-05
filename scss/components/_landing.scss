@@ -30,13 +30,19 @@
     @include flexCenter;
     flex-direction: column;
     p {
-      width: 77.5%;
+      width: 70%;
       margin-top: 16px;
       text-align: center;
       font-size: 13px;
       line-height: 144.5%;
       text-align: center;
       letter-spacing: -0.02em;
+      @include _768 {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+      }
     }
     button {
       margin-top: 28px;
