@@ -1,0 +1,24 @@
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 64px;
+  width: 100%;
+  @include row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $intro-email;
+  &__logo {
+    img {
+      height: 20px;
+    }
+  }
+  &__list {
+    @include row;
+    align-items: center;
+    &__items {
+      margin-left: 20px;
+    }
+  }
+}

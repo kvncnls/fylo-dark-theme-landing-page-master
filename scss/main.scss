@@ -1,0 +1,12 @@
+@import "./utilities/mixins";
+@import "./utilities/variables";
+
+@import "boilerplate";
+@import "layout";
+
+@import "./components/navbar";
+@import "./components/landing";
+@import "./components/features1";
+@import "./components/features2";
+@import "./components/testimonials";
+@import "./components/footer";

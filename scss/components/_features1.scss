@@ -1,0 +1,22 @@
+.features1 {
+  margin-top: 120px;
+  @include flexCenter;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 18px;
+  .feature {
+    margin-bottom: 120px;
+    @include flexCenter;
+    flex-direction: column;
+    img {
+      margin-bottom: 40px;
+    }
+    h2 {
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}

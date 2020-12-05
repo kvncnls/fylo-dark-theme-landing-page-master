@@ -1,0 +1,28 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  background-color: $main-bg;
+  color: $white;
+  font-size: 10px;
+}
+
+body {
+  font-family: $main-font;
+  font-size: 1.2rem;
+  position: relative;
+  min-height: 100vh;
+  @include col;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}

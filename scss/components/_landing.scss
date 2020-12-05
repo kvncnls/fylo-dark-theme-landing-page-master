@@ -1,0 +1,51 @@
+.landing {
+  @include flexCenter;
+  flex-direction: column;
+  .intro {
+    width: 100%;
+    @include flexCenter;
+    flex-direction: column;
+    background-image: url(/images//illustration-intro.png), url(/images/bg-curvy-mobile.svg);
+    background-color: $intro-email;
+    background-position: 50% 32.5%, 50% 100%;
+    background-size: 82.5%, contain;
+    background-repeat: no-repeat, no-repeat;
+    height: 46vh;
+    @include _768 {
+      background-image: url(/images//illustration-intro.png), url(/images/bg-curvy-desktop.svg);
+    }
+  }
+  header {
+    margin-top: -72px;
+    width: 80%;
+    h1 {
+      font-size: 23px;
+      line-height: 141.5%;
+      text-align: center;
+      letter-spacing: -0.02em;
+    }
+  }
+  .cta {
+    background-color: $main-bg;
+    @include flexCenter;
+    flex-direction: column;
+    p {
+      width: 77.5%;
+      margin-top: 16px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 144.5%;
+      text-align: center;
+      letter-spacing: -0.02em;
+    }
+    button {
+      margin-top: 28px;
+      @include btnReset;
+      color: $white;
+      height: 44px;
+      width: 218px;
+      background-color: $blue-cta;
+      border-radius: 20px;
+    }
+  }
+}
