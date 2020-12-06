@@ -58,6 +58,7 @@
       flex-direction: row;
     }
     ul {
+      width: 80px;
       @include _480 {
         margin-right: 80px;
       }
@@ -67,10 +68,19 @@
         font-family: Open Sans;
         font-style: normal;
         font-weight: 400;
+        @media (hover: hover) {
+          &:hover {
+            cursor: pointer;
+            font-weight: 700;
+          }
+        }
       }
     }
+    .list-one {
+      margin-bottom: 24px;
+    }
     .socials {
-      margin: auto auto 40px;
+      margin: 48px auto 0;
       @include row;
       @include _480 {
         margin: 0 auto auto 0;
