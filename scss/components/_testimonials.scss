@@ -1,0 +1,58 @@
+.testimonials {
+  margin: 132px 0;
+  @include flexCenter;
+  flex-direction: column;
+  @include _1024 {
+    flex-direction: row;
+  }
+  &__card {
+    position: relative;
+    margin-bottom: 22px;
+    padding: 24px 18px 18px;
+    height: 100%;
+    max-width: 254px;
+    max-height: 145px;
+    background-color: $testimonials;
+    border-radius: 4px;
+    @include _600 {
+      max-width: 360px;
+      max-height: 200px;
+    }
+    @include _1024 {
+      margin: 0 20px;
+    }
+    &__graphic {
+      position: absolute;
+      top: -18px;
+      left: 2px;
+      z-index: 5;
+      width: 24px;
+    }
+    &__quote {
+      font-size: 10px;
+      line-height: 160%;
+      letter-spacing: -0.04em;
+    }
+    &__user {
+      height: 30px;
+      margin-top: 10px;
+      @include flexCenter;
+      justify-content: flex-start;
+      img {
+        width: 24px;
+        margin-right: 8px;
+        border-radius: 12px;
+      }
+      &__info {
+        &__name {
+          font-size: 10px;
+          font-weight: 700;
+          margin-bottom: 4px;
+        }
+        &__role {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}
