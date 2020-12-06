@@ -1,0 +1,81 @@
+.features {
+  margin-top: 120px;
+  @include flexCenter;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 18px;
+  .flex-container {
+    @include flexCenter;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 920px;
+    .feature {
+      margin-bottom: 120px;
+      @include flexCenter;
+      flex-direction: column;
+      h2 {
+        margin-bottom: 12px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -0.04em;
+      }
+      p {
+        width: 85%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: -0.02em;
+        line-height: 150%;
+      }
+      img {
+        margin-bottom: 40px;
+        width: 64px;
+      }
+    }
+  }
+  .productivity {
+    @include flexCenter;
+    flex-direction: column;
+    &__graphic {
+      @include flexCenter;
+      flex-direction: column;
+      img {
+        width: 90%;
+      }
+    }
+    &__info {
+      margin-top: 48px;
+      h2 {
+        width: 100%;
+        margin-bottom: 12px;
+        margin-right: auto;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: -0.04em;
+      }
+      p {
+        width: 100%;
+        text-align: left;
+        font-size: 13px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+      }
+      a {
+        position: relative;
+        width: fit-content;
+        margin-top: 16px;
+        @include flexCenter;
+        justify-content: start;
+        color: $cyan-cta;
+        border-bottom: 1px solid $cyan-cta;
+        padding-bottom: 6px;
+        img {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
