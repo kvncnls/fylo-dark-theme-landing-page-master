@@ -1,5 +1,4 @@
 .features {
-  margin-top: 120px;
   @include flexCenter;
   flex-direction: column;
   width: 100%;
@@ -24,10 +23,11 @@
       p {
         width: 85%;
         text-align: center;
-        font-weight: bold;
-        font-size: 13px;
-        letter-spacing: -0.02em;
-        line-height: 150%;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 135%;
+        text-align: center;
+        letter-spacing: -0.04em;
       }
       img {
         margin-bottom: 40px;
@@ -47,6 +47,7 @@
     }
     &__info {
       margin-top: 48px;
+      max-width: 400px;
       h2 {
         width: 100%;
         margin-bottom: 12px;
@@ -57,11 +58,14 @@
         letter-spacing: -0.04em;
       }
       p {
+        font-family: $secondary-font;
         width: 100%;
+        max-width: 296px;
         text-align: left;
-        font-size: 13px;
-        line-height: 150%;
-        letter-spacing: -0.02em;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 135%;
+        letter-spacing: -0.045em;
       }
       a {
         position: relative;

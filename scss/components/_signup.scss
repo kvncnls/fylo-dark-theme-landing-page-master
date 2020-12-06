@@ -3,15 +3,17 @@
   flex-direction: column;
   &__card {
     z-index: 1;
-    margin-bottom: -45%;
     @include flexCenter;
     flex-direction: column;
     justify-content: space-evenly;
     width: 304px;
-    height: 320px;
+    height: $card-height;
     background-color: $intro-email;
     border-radius: 8px;
     padding: 12px 28px 0;
+    @include _1024 {
+      height: $card-height-desktop;
+    }
     h2,
     p,
     button {

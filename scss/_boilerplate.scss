@@ -17,10 +17,6 @@ html {
 body {
   font-family: $main-font;
   font-size: 1.2rem;
-  position: relative;
-  min-height: 100vh;
-  @include col;
-  align-items: center;
 }
 
 li {
