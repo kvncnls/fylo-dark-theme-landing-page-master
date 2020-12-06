@@ -16,6 +16,10 @@
     align-items: center;
     &__items {
       margin-left: 20px;
+      font-family: $main-font;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 135%;
     }
   }
 }
