@@ -10,6 +10,9 @@
   @include _480 {
     height: 800px;
   }
+  @include _600 {
+    padding: 0 64px;
+  }
   &__main {
     @include col;
     margin-top: 240px;
