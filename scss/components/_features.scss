@@ -52,22 +52,36 @@
         width: 100%;
         margin-bottom: 12px;
         margin-right: auto;
+        font-family: $main-font;
+        font-weight: 700;
         font-weight: bold;
-        font-size: 18px;
-        line-height: 150%;
-        letter-spacing: -0.04em;
+        font-size: 17px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        @include _600 {
+          font-size: 40px;
+          line-height: 122.5%;
+          letter-spacing: 0.005em;
+        }
       }
       p {
         font-family: $secondary-font;
         width: 100%;
         max-width: 296px;
         text-align: left;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 14px;
         line-height: 135%;
-        letter-spacing: -0.045em;
+        letter-spacing: -0.0425em;
+        @include _600 {
+          max-width: 560px;
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: 0;
+        }
       }
       a {
+        font-family: $secondary-font;
         position: relative;
         width: fit-content;
         margin-top: 16px;
@@ -76,6 +90,11 @@
         color: $cyan-cta;
         border-bottom: 1px solid $cyan-cta;
         padding-bottom: 6px;
+        @include _600 {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 150%;
+        }
         img {
           margin-left: 8px;
         }
