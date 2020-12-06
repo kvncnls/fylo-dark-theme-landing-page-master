@@ -26,6 +26,7 @@
         }
       }
       p {
+        font-family: $secondary-font;
         width: 85%;
         text-align: center;
         font-weight: normal;
@@ -41,6 +42,20 @@
       img {
         margin-bottom: 40px;
         width: 64px;
+      }
+    }
+    @include _600 {
+      .feature:nth-child(1),
+      .feature:nth-child(4) {
+        p {
+          width: 354px;
+        }
+      }
+      .feature:nth-child(2),
+      .feature:nth-child(3) {
+        p {
+          width: 384px;
+        }
       }
     }
   }
