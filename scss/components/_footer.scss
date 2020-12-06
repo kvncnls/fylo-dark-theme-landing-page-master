@@ -40,4 +40,11 @@ footer {
       }
     }
   }
+  .socials {
+    margin: auto auto 40px;
+    &__icon {
+      width: 24px;
+      margin: 5px;
+    }
+  }
 }
