@@ -1,23 +1,31 @@
-footer {
+.footer {
   @include col;
   background-color: $footer;
   height: 932px;
+  width: 100%;
   padding: 0 20px;
   @include _400 {
     padding: 0 24px;
   }
-  .footer__logo {
-    margin-top: 70%;
-    img {
-      margin-left: 20px;
-      margin-bottom: 48px;
+  &__main {
+    @include col;
+    margin-top: 240px;
+    &__logo {
+      img {
+        margin-left: 20px;
+        margin-bottom: 48px;
+      }
     }
   }
-  .lorem,
-  .telephone,
-  .email {
+  &__secondary {
+    @include col;
+  }
+  .info-block {
     @include row;
     margin-bottom: 12px;
+    @include _600 {
+      margin-bottom: 18px;
+    }
     .icon {
       width: 24px;
       height: 24px;
@@ -35,6 +43,12 @@ footer {
       font-size: 16px;
       line-height: 135%;
       letter-spacing: -0.0445em;
+      @include _600 {
+        max-width: 330px;
+        font-size: 17px;
+        line-height: 138.5%;
+        letter-spacing: -0.03em;
+      }
     }
   }
   .quick-links {
@@ -57,12 +71,22 @@ footer {
     }
     .socials {
       margin: auto auto 40px;
+      @include row;
       @include _480 {
         margin: 0 auto auto 0;
       }
       &__icon {
         width: 24px;
-        margin: 5px;
+        height: 24px;
+        margin: 0 5px;
+        @media (hover: hover) {
+          &:hover {
+            cursor: pointer;
+            path {
+              fill: $cyan-cta;
+            }
+          }
+        }
       }
     }
   }

@@ -12,16 +12,23 @@ body {
 }
 
 .features {
+  position: relative;
   margin-top: 120px;
 }
 
 .testimonials {
+  position: relative;
   margin: 132px 0;
 }
 
 .signup {
+  position: relative;
   margin-bottom: -$card-height / 2;
   @include _1024 {
     margin-bottom: -$card-height-desktop / 2;
   }
+}
+
+footer {
+  position: relative;
 }
