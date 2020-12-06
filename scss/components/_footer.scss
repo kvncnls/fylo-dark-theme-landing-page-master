@@ -1,0 +1,43 @@
+footer {
+  @include col;
+  background-color: $footer;
+  height: 932px;
+  padding: 0 20px;
+  .footer__logo {
+    margin-top: 70%;
+    img {
+      margin-left: 20px;
+      margin-bottom: 48px;
+    }
+  }
+  .lorem,
+  .telephone,
+  .email {
+    @include row;
+    margin-bottom: 12px;
+    .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 24px;
+    }
+    img {
+      height: 16px;
+    }
+    p {
+      width: 75%;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 135%;
+      letter-spacing: -0.045em;
+    }
+  }
+  .quick-links {
+    ul {
+      margin-top: 64px;
+      li {
+        margin-bottom: 12px;
+        font-size: 14px;
+      }
+    }
+  }
+}
