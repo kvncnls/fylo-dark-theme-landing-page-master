@@ -1,18 +1,19 @@
 .landing {
+  width: 100vw;
   @include flexCenter;
   flex-direction: column;
+  background-color: $main-bg;
   .intro {
-    width: 100%;
-    @include flexCenter;
-    flex-direction: column;
+    height: 50vh;
+    width: 100vw;
     background-image: url(/images/illustration-intro.png), url(/images/bg-curvy-mobile.svg);
     background-color: $intro-email;
-    background-position: 50% 32.5%, 50% 100%;
+    background-position: 50% 32.5%, 50% 65%;
     background-size: 82.5%, contain;
     background-repeat: no-repeat, no-repeat;
-    height: 46vh;
-    @include _600 {
+    @include _768 {
       background-image: url(/images/illustration-intro.png), url(/images/bg-curvy-desktop.svg);
+      background-position: 50% 32.5%, 50% 100%;
     }
   }
   header {
@@ -49,7 +50,6 @@
     }
   }
   .cta {
-    background-color: $main-bg;
     @include flexCenter;
     flex-direction: column;
     p {
