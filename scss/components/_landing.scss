@@ -20,20 +20,28 @@
     width: 80%;
     @include flexCenter;
     flex-direction: column;
-    @include _600 {
-      margin-top: -40px;
-    }
-    @include _768 {
+    @include _400 {
       margin-top: -24px;
     }
+    @include _600 {
+      margin-top: 0px;
+    }
+    @include _768 {
+      margin-top: 24px;
+    }
     h1 {
-      max-width: 712px;
+      max-width: 300px;
       font-weight: bold;
       font-size: 2.3rem;
       line-height: 141.5%;
       text-align: center;
       letter-spacing: -0.02em;
       @include _600 {
+        font-size: 3rem;
+        max-width: 480px;
+      }
+      @include _768 {
+        max-width: 712px;
         font-size: 4rem;
         line-height: 150%;
         letter-spacing: 0.005em;
@@ -45,7 +53,8 @@
     @include flexCenter;
     flex-direction: column;
     p {
-      width: 65%;
+      width: 75%;
+      max-width: 360px;
       margin-top: 16px;
       font-family: $secondary-font;
       font-style: normal;
@@ -54,8 +63,12 @@
       line-height: 144.5%;
       text-align: center;
       letter-spacing: -0.01em;
+      @include _600 {
+        max-width: 500px;
+      }
       @include _768 {
-        width: 70%;
+        width: 100%;
+        max-width: 636px;
         font-weight: bold;
         font-size: 20px;
         line-height: 150%;

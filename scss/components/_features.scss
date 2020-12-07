@@ -4,10 +4,15 @@
   width: 100%;
   padding: 0 18px;
   .flex-container {
+    width: 100%;
     @include flexCenter;
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 920px;
+    @include _768 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
     .feature {
       margin-bottom: 120px;
       @include flexCenter;
@@ -48,13 +53,13 @@
       .feature:nth-child(1),
       .feature:nth-child(4) {
         p {
-          width: 354px;
+          max-width: 354px;
         }
       }
       .feature:nth-child(2),
       .feature:nth-child(3) {
         p {
-          width: 384px;
+          max-width: 384px;
         }
       }
     }
@@ -62,6 +67,9 @@
   .productivity {
     @include flexCenter;
     flex-direction: column;
+    @include _1024 {
+      flex-direction: row;
+    }
     &__graphic {
       @include flexCenter;
       flex-direction: column;
