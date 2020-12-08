@@ -24,10 +24,12 @@
   }
   &__container {
     @include col;
+    @include _1024 {
+      margin-left: auto;
+    }
     @include _1280 {
       flex-direction: row;
       align-items: flex-end;
-      margin-left: auto;
     }
     &__main {
       @include col;
@@ -90,6 +92,7 @@
     }
     @include _1024 {
       margin-top: 48px;
+      margin-right: auto;
     }
     @include _1280 {
       margin-top: 136px;
