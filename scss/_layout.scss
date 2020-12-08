@@ -10,15 +10,18 @@ body {
   position: relative;
   top: 0;
   left: 0;
+  overflow-x: hidden;
 }
 
 .landing {
   position: relative;
+  overflow-x: hidden;
 }
 
 .features {
   position: relative;
   margin-top: 120px;
+  overflow-x: hidden;
 }
 
 .testimonials {
@@ -29,6 +32,7 @@ body {
 .signup {
   position: relative;
   margin-bottom: -$card-height / 2;
+  overflow-x: hidden;
   @include _1024 {
     margin-bottom: -$card-height-desktop / 2;
   }
@@ -36,4 +40,5 @@ body {
 
 footer {
   position: relative;
+  overflow-x: hidden;
 }

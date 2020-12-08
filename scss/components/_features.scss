@@ -70,16 +70,33 @@
     @include _1024 {
       flex-direction: row;
     }
+    @include _1280 {
+      width: 100%;
+      justify-content: center;
+    }
     &__graphic {
       @include flexCenter;
       flex-direction: column;
+      @include _1280 {
+        margin-left: 0;
+        margin-right: 24px;
+      }
       img {
         width: 90%;
       }
     }
     &__info {
       margin-top: 48px;
-      max-width: 400px;
+      max-width: 290px;
+      @include _400 {
+        max-width: 320px;
+      }
+      @include _600 {
+        max-width: 400px;
+      }
+      @include _1280 {
+        max-width: 560px;
+      }
       h2 {
         width: 100%;
         margin-bottom: 12px;
@@ -99,14 +116,12 @@
       p {
         font-family: $secondary-font;
         width: 100%;
-        max-width: 296px;
         text-align: left;
         font-weight: 400;
         font-size: 14px;
         line-height: 135%;
         letter-spacing: -0.0425em;
         @include _600 {
-          max-width: 560px;
           font-size: 16px;
           line-height: 150%;
           letter-spacing: 0;
