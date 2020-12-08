@@ -16,6 +16,7 @@
     }
     @include _1024 {
       height: $card-height-desktop;
+      width: 864px;
     }
     h2,
     p,
@@ -51,11 +52,16 @@
         line-height: 150%;
         letter-spacing: 0;
       }
+      @include _1024 {
+        max-width: 624px;
+      }
     }
     form {
       font-family: $secondary-font;
       @include flexCenter;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       @include _1024 {
         flex-direction: row;
       }
@@ -69,6 +75,10 @@
         &:focus {
           outline: none;
         }
+        @include _1024 {
+          width: 480px;
+          height: 48px;
+        }
       }
       button {
         font-family: $secondary-font;
@@ -80,6 +90,12 @@
         width: 254px;
         height: 44px;
         border-radius: 22px;
+        @include _1024 {
+          margin-top: 0%;
+          margin-left: 24px;
+          width: 200px;
+          height: 48px;
+        }
       }
     }
   }

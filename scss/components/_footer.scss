@@ -13,19 +13,44 @@
   @include _600 {
     padding: 0 64px;
   }
-  &__main {
+  @include _1024 {
+    flex-direction: row;
+    align-items: center;
+    height: 700px;
+  }
+  @include _1440 {
+    flex-direction: row;
+    align-items: center;
+  }
+  &__container {
     @include col;
-    margin-top: 240px;
-    &__logo {
-      img {
-        margin-left: 20px;
-        margin-bottom: 48px;
+    @include _1280 {
+      flex-direction: row;
+      align-items: flex-end;
+      margin-left: auto;
+    }
+    &__main {
+      @include col;
+      margin-top: 240px;
+      @include _1024 {
+        margin-top: 0;
+      }
+      &__logo {
+        img {
+          margin-left: 20px;
+          margin-bottom: 48px;
+        }
+      }
+    }
+    &__secondary {
+      @include col;
+      @include _1280 {
+        margin-bottom: 24px;
+        margin-right: 80px;
       }
     }
   }
-  &__secondary {
-    @include col;
-  }
+
   .info-block {
     @include row;
     margin-bottom: 12px;
@@ -62,6 +87,13 @@
     @include col;
     @include _480 {
       flex-direction: row;
+    }
+    @include _1024 {
+      margin-top: 48px;
+    }
+    @include _1280 {
+      margin-top: 136px;
+      margin-right: auto;
     }
     ul {
       width: 80px;
