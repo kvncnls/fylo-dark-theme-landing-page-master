@@ -87,14 +87,9 @@
     }
     &__info {
       margin-top: 48px;
-      max-width: 290px;
-      @include _400 {
-        max-width: 320px;
-      }
+      width: 85%;
+      max-width: 400px;
       @include _600 {
-        max-width: 400px;
-      }
-      @include _1280 {
         max-width: 560px;
       }
       h2 {

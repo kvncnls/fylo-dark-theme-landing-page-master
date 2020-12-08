@@ -4,6 +4,7 @@
   height: 932px;
   width: 100%;
   padding: 0 20px;
+  align-items: center;
   @include _400 {
     padding: 0 24px;
   }
@@ -15,12 +16,7 @@
   }
   @include _1024 {
     flex-direction: row;
-    align-items: center;
     height: 700px;
-  }
-  @include _1440 {
-    flex-direction: row;
-    align-items: center;
   }
   &__container {
     @include col;
@@ -101,6 +97,9 @@
     ul {
       width: 80px;
       @include _480 {
+        margin-right: 56px;
+      }
+      @include _1024 {
         margin-right: 80px;
       }
       li {
