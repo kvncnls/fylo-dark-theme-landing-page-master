@@ -10,13 +10,13 @@
     background-image: url(/images/bg-curvy-mobile.svg);
     background-color: $intro-email;
     background-position: 50% 100%;
-    background-size: contain;
+    background-size: 110% 45%;
     background-repeat: no-repeat;
     @include _768 {
       background-image: url(/images/bg-curvy-desktop.svg);
-      background-position: 50% 100%;
     }
     &__graphic {
+      margin-top: 24px;
       @include flexCenter;
       flex-direction: column;
       img {
@@ -24,19 +24,10 @@
       }
     }
     &__header {
-      margin-top: -72px;
+      margin-top: 32px;
       width: 80%;
       @include flexCenter;
       flex-direction: column;
-      @include _400 {
-        margin-top: -24px;
-      }
-      @include _600 {
-        margin-top: 0px;
-      }
-      @include _768 {
-        margin-top: 24px;
-      }
       h1 {
         max-width: 300px;
         font-weight: bold;
@@ -56,52 +47,52 @@
         }
       }
     }
-    &__cta {
-      @include flexCenter;
-      flex-direction: column;
-      p {
-        width: 75%;
-        max-width: 360px;
-        margin-top: 16px;
-        font-family: $secondary-font;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1.3rem;
-        line-height: 144.5%;
-        text-align: center;
-        letter-spacing: -0.01em;
-        @include _600 {
-          max-width: 500px;
-        }
-        @include _768 {
-          width: 100%;
-          max-width: 636px;
-          font-weight: bold;
-          font-size: 20px;
-          line-height: 150%;
-          letter-spacing: -0.01em;
-        }
+  }
+  .cta {
+    @include flexCenter;
+    flex-direction: column;
+    p {
+      width: 75%;
+      max-width: 360px;
+      margin-top: 16px;
+      font-family: $secondary-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.3rem;
+      line-height: 150%;
+      text-align: center;
+      letter-spacing: -0.01em;
+      @include _600 {
+        max-width: 500px;
       }
-      button {
-        margin-top: 28px;
-        @include btnReset;
-        color: $white;
-        height: 44px;
-        width: 218px;
-        background-color: $blue-cta;
-        border-radius: 22px;
+      @include _768 {
+        width: 100%;
+        max-width: 636px;
         font-weight: bold;
-        font-size: 13px;
+        font-size: 20px;
         line-height: 150%;
-        text-align: center;
         letter-spacing: -0.01em;
-        @include _768 {
-          font-size: 16px;
-          letter-spacing: 0;
-          height: 56px;
-          width: 280px;
-          border-radius: 28px;
-        }
+      }
+    }
+    button {
+      margin-top: 28px;
+      @include btnReset;
+      color: $white;
+      height: 44px;
+      width: 218px;
+      background-color: $blue-cta;
+      border-radius: 22px;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 150%;
+      text-align: center;
+      letter-spacing: -0.01em;
+      @include _768 {
+        font-size: 16px;
+        letter-spacing: 0;
+        height: 56px;
+        width: 280px;
+        border-radius: 28px;
       }
     }
   }
