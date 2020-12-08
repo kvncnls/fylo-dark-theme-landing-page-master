@@ -1,11 +1,13 @@
 .navbar {
-  height: 64px;
   width: 100%;
   @include row;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
   background-color: $intro-email;
+  @include _600 {
+    padding: 48px;
+  }
   &__logo {
     img {
       height: 20px;
