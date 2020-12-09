@@ -44,6 +44,12 @@
   }
 }
 
+@mixin _500 {
+  @media screen and (min-width: 500px) {
+    @content;
+  }
+}
+
 /*########### Small Tablets ###########*/
 @mixin _600 {
   @media screen and (min-width: 600px) {
