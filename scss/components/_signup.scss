@@ -56,7 +56,7 @@
         max-width: 624px;
       }
     }
-    form {
+    .form {
       font-family: $secondary-font;
       @include flexCenter;
       flex-direction: column;
