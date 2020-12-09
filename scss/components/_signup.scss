@@ -84,7 +84,7 @@
         font-family: $secondary-font;
         margin-top: 22px;
         @include btnReset;
-        background-color: $blue-cta;
+        background-color: $cyan-cta;
         font-weight: 700;
         color: $white;
         width: 254px;
@@ -92,7 +92,7 @@
         border-radius: 22px;
         @media (hover: hover) {
           &:hover {
-            background-color: $cyan-cta;
+            background-color: $cyan-cta-hover;
           }
         }
         @include _1024 {
